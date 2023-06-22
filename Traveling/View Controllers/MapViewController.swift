@@ -216,15 +216,6 @@ class MapViewController: UIViewController, UISearchBarDelegate {
         locationManager.requestWhenInUseAuthorization()
 
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(rotateMe), userInfo: nil, repeats: true)
-       
-        
-//        searchButtunCastom.layer.shadowRadius = 10
-//        searchButtunCastom.layer.shadowOffset = .zero
-//        searchButtunCastom.layer.shadowOpacity = 0.5
-//        searchButtunCastom.layer.shadowColor = UIColor.black.cgColor
-//        searchButtunCastom.layer.shadowPath = UIBezierPath(rect: searchButtunCastom.bounds).cgPath
-//        searchButtunCastom.layer.masksToBounds = false
-        
     }
  
     override func viewWillAppear(_ animated: Bool) {
