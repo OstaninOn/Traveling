@@ -28,7 +28,7 @@
         <!--Log View Controller-->
         <scene sceneID="aZL-pn-NfS">
             <objects>
-                <tableViewController id="c19-vd-Wl0" customClass="LogViewController" customModule="Agents_Partner" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="c19-vd-Wl0" customClass="LogViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="6kj-2a-RoU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LogCell" rowHeight="63" id="jvF-v5-qha" customClass="LogCell" customModule="Agents_Partner" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LogCell" rowHeight="63" id="jvF-v5-qha" customClass="LogCell" customModule="Traveling" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="150" width="393" height="63"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jvF-v5-qha" id="F1Y-m3-OlV">
@@ -134,7 +134,7 @@
         <!--Map-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="Map" id="vXZ-lx-hvc" customClass="MapViewController" customModule="Agents_Partner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map" id="vXZ-lx-hvc" customClass="MapViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -164,7 +164,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="15"/>
                                         </userDefinedRuntimeAttributes>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" image="location" catalog="system" id="Gtp-5U-8XV">
+                                    <barButtonItem title="Item" image="icons8-map-100-2" id="Gtp-5U-8XV">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="22"/>
@@ -273,7 +273,7 @@
         <!--Add New Entry-->
         <scene sceneID="SJk-ED-soP">
             <objects>
-                <viewController title="Add New Entry" id="3CP-XK-uYk" customClass="AddNewEntryViewController" customModule="Agents_Partner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Add New Entry" id="3CP-XK-uYk" customClass="AddNewEntryViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tmb-Qn-ndC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -379,7 +379,7 @@ UHJvc3RveSBBV1gAA
         <!--Select Category-->
         <scene sceneID="o7f-FX-qyn">
             <objects>
-                <tableViewController title="Select Category" id="EBb-3Y-HwQ" customClass="CategoriesTableViewController" customModule="Agents_Partner" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Select Category" id="EBb-3Y-HwQ" customClass="CategoriesTableViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Uus-AQ-4wd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -433,7 +433,7 @@ UHJvc3RveSBBV1gAA
         <!--Loading View Controller-->
         <scene sceneID="7E7-g1-RDq">
             <objects>
-                <viewController storyboardIdentifier="LoadingViewController" id="JaI-g8-X5V" customClass="LoadingViewController" customModule="Agents_Partner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoadingViewController" id="JaI-g8-X5V" customClass="LoadingViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g4S-xs-ZBK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -520,7 +520,7 @@ UHJvc3RveSBBV1gAA
         <!--Schow Photo View Controller-->
         <scene sceneID="Y50-s1-dGF">
             <objects>
-                <viewController storyboardIdentifier="SchowPhotoViewController" id="ikl-e6-NSM" customClass="SchowPhotoViewController" customModule="Agents_Partner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SchowPhotoViewController" id="ikl-e6-NSM" customClass="SchowPhotoViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qwg-r4-hfA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -592,7 +592,7 @@ UHJvc3RveSBBV1gAA
         <image name="bookmark" catalog="system" width="110" height="128"/>
         <image name="icons8-double-down-50" width="25" height="25"/>
         <image name="icons8-gallery-100-2" width="33.333332061767578" height="33.333332061767578"/>
-        <image name="location" catalog="system" width="128" height="121"/>
+        <image name="icons8-map-100-2" width="33.333332061767578" height="33.333332061767578"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="map" catalog="system" width="128" height="112"/>
         <image name="mappin.and.ellipse" catalog="system" width="117" height="128"/>

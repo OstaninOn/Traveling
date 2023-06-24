@@ -179,7 +179,24 @@ class AddNewEntryViewController: UIViewController {
         descriptionTextField.layer.shadowColor = UIColor.black.cgColor
         descriptionTextField.layer.shadowPath = UIBezierPath(rect: descriptionTextField.bounds).cgPath
         descriptionTextField.layer.masksToBounds = false
-                
+        
+        categoryTextField.layer.cornerRadius = 5
+        categoryTextField.layer.shadowRadius = 6
+        categoryTextField.layer.shadowOffset = .zero
+        categoryTextField.layer.shadowOpacity = 1
+        categoryTextField.layer.shadowColor = UIColor.black.cgColor
+        categoryTextField.layer.shadowPath = UIBezierPath(rect: categoryTextField.bounds).cgPath
+        categoryTextField.layer.masksToBounds = false
+        
+        nameTextField.layer.cornerRadius = 5
+        nameTextField.layer.shadowRadius = 6
+        nameTextField.layer.shadowOffset = .zero
+        nameTextField.layer.shadowOpacity = 1
+        nameTextField.layer.shadowColor = UIColor.black.cgColor
+        nameTextField.layer.shadowPath = UIBezierPath(rect: nameTextField.bounds).cgPath
+        nameTextField.layer.masksToBounds = false
+        
+        
         
     }
     
