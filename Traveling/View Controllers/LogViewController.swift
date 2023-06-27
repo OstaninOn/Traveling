@@ -151,8 +151,16 @@ class LogViewController: UITableViewController {
         
         
       switch specimen.category.name {
+      case "Деревья":
+        cell.iconImageView.image = UIImage(named: "IconDerevo2")
+      case "Дом":
+        cell.iconImageView.image = UIImage(named: "IconHome")
+      case "Насекомые":
+        cell.iconImageView.image = UIImage(named: "IconInsects")
+      case "Флора":
+        cell.iconImageView.image = UIImage(named: "IconFlora")
       case "Животные":
-        cell.iconImageView.image = UIImage(named: "IconMammal")
+        cell.iconImageView.image = UIImage(named: "IconAnimals")
       case "Птицы":
         cell.iconImageView.image = UIImage(named: "IconBird")
       case "Синагога":
@@ -168,13 +176,13 @@ class LogViewController: UITableViewController {
       case "Замок":
         cell.iconImageView.image = UIImage(named: "IconZamok2")
       case "Другое":
-        cell.iconImageView.image = UIImage(named: "IconUncategorized")
+        cell.iconImageView.image = UIImage(named: "IconUncategorizedd")
       case "Памятник":
         cell.iconImageView.image = UIImage(named: "IconPamjatnic")
       case "Руины":
         cell.iconImageView.image = UIImage(named: "IconRuiny")
       case "Парк":
-        cell.iconImageView.image = UIImage(named: "IconDerevo2")
+        cell.iconImageView.image = UIImage(named: "IconPark")
       case "Усадьба":
         cell.iconImageView.image = UIImage(named: "IconUsadba")
       case "Монастырь":

@@ -216,15 +216,6 @@ class MapViewController: UIViewController, UISearchBarDelegate {
         locationManager.requestWhenInUseAuthorization()
 
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(rotateMe), userInfo: nil, repeats: true)
-       
-        
-//        searchButtunCastom.layer.shadowRadius = 10
-//        searchButtunCastom.layer.shadowOffset = .zero
-//        searchButtunCastom.layer.shadowOpacity = 0.5
-//        searchButtunCastom.layer.shadowColor = UIColor.black.cgColor
-//        searchButtunCastom.layer.shadowPath = UIBezierPath(rect: searchButtunCastom.bounds).cgPath
-//        searchButtunCastom.layer.masksToBounds = false
-        
     }
  
     override func viewWillAppear(_ animated: Bool) {
@@ -346,8 +337,16 @@ extension MapViewController: MKMapViewDelegate {
                 let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: subtitle)
                 
                 switch subtitle {
+                case "Деревья":
+                    annotationView.image = UIImage(named: "IconDerevo2")
+                case "Дом":
+                    annotationView.image = UIImage(named: "IconHome")
+                case "Насекомые":
+                    annotationView.image = UIImage(named: "IconInsects")
+                case "Флора":
+                    annotationView.image = UIImage(named: "IconFlora")
                 case "Животные":
-                    annotationView.image = UIImage(named: "IconMammal")
+                    annotationView.image = UIImage(named: "IconAnimals")
                 case "Птицы":
                     annotationView.image = UIImage(named: "IconBird")
                 case "Синагога":
@@ -363,11 +362,11 @@ extension MapViewController: MKMapViewDelegate {
                 case "Замок":
                     annotationView.image = UIImage(named: "IconZamok2")
                 case "Другое":
-                    annotationView.image = UIImage(named: "IconUncategorized")
+                    annotationView.image = UIImage(named: "IconUncategorizedd")
                 case "Усадьба":
                     annotationView.image = UIImage(named: "IconUsadba")
                 case "Парк":
-                    annotationView.image = UIImage(named: "IconDerevo2")
+                    annotationView.image = UIImage(named: "IconPark")
                 case "Монастырь":
                     annotationView.image = UIImage(named: "IconMonastyr1")
                 case "Памятник":

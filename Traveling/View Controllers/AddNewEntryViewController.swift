@@ -14,6 +14,7 @@ struct EntryImage {
 @available(iOS 14.0, *)
 class AddNewEntryViewController: UIViewController {
     
+    @IBOutlet weak var viewShadowDescriptionTexs: UIView!
     @IBOutlet weak var categoryTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextView!
     @IBOutlet weak var nameTextField: UITextField!
@@ -21,7 +22,7 @@ class AddNewEntryViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var images = [EntryImage]()
     var imagesPerLine: CGFloat = 4
-    let imageSpacing: CGFloat = 4
+    let imageSpacing: CGFloat = 6
     
     
     // MARK: - Variables And Properties
@@ -172,15 +173,24 @@ class AddNewEntryViewController: UIViewController {
         
         self.hideKeyboardWhenTappedAround()
         
+        viewShadowDescriptionTexs.layer.cornerRadius = 5
+        viewShadowDescriptionTexs.layer.shadowRadius = 5
+        viewShadowDescriptionTexs.layer.shadowOpacity = 1
+        viewShadowDescriptionTexs.layer.shadowColor = UIColor.black.cgColor
+        viewShadowDescriptionTexs.layer.masksToBounds = false
+       
         descriptionTextField.layer.cornerRadius = 5
-        descriptionTextField.layer.shadowRadius = 6
-        descriptionTextField.layer.shadowOffset = .zero
-        descriptionTextField.layer.shadowOpacity = 1
-        descriptionTextField.layer.shadowColor = UIColor.black.cgColor
-        descriptionTextField.layer.shadowPath = UIBezierPath(rect: descriptionTextField.bounds).cgPath
-        descriptionTextField.layer.masksToBounds = false
-                
         
+        categoryTextField.layer.cornerRadius = 5
+        categoryTextField.layer.shadowRadius = 5
+        categoryTextField.layer.shadowOpacity = 1
+        categoryTextField.layer.shadowColor = UIColor.black.cgColor
+        
+        nameTextField.layer.cornerRadius = 5
+        nameTextField.layer.shadowRadius = 5
+        nameTextField.layer.shadowOpacity = 1
+        nameTextField.layer.shadowColor = UIColor.black.cgColor
+     
     }
     
      func setupCollectionView() {
@@ -284,6 +294,7 @@ class AddNewEntryViewController: UIViewController {
     private func setImages(id: String, image: UIImage) {
         guard !images.contains(where: { $0.id == id }) else { return }
         images.append(EntryImage(id: id, image: image))
+        
     }
     
     
@@ -307,7 +318,6 @@ extension AddNewEntryViewController: UIImagePickerControllerDelegate, UINavigati
                 }
             }
         }
-        //self.presentedViewController?.dismiss(animated: true)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
