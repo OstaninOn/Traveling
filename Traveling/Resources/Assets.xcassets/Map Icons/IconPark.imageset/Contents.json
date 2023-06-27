@@ -5,11 +5,11 @@
       "scale" : "1x"
     },
     {
-      "filename" : "IconArachind@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "IconPark.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

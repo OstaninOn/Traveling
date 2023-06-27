@@ -15,7 +15,7 @@ class CategoriesTableViewController: UITableViewController {
       if categories.count == 0 { // database has no Category records
         try! realm.write() { // add some records to the database.
           let defaultCategories =
-            ["Другое", "Парк", "Усадьба", "Замок", "Синагога", "Монастырь", "Памятник", "Руины", "Православная церковь", "Кафедральный собор", "Кастел", "Часовня", "Птицы", "Животные" ]
+            ["Другое", "Дом", "Парк", "Усадьба", "Замок", "Синагога", "Монастырь", "Памятник", "Руины", "Православная церковь", "Кафедральный собор", "Кастел", "Часовня", "Птицы", "Животные", "Флора", "Насекомые", "Деревья" ]
           
           for category in defaultCategories { // For each category name, you create a new instance of Category, populate name and add the object to realm
             let newCategory = Category()

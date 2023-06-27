@@ -8,12 +8,10 @@
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Architun.ttf">
-            <string>ArchitunMedium</string>
-        </array>
         <array key="kategory.ttf">
             <string>AlumniSansPinstripe-Regular</string>
         </array>
@@ -287,14 +285,17 @@ UHJvc3RveSBBV1gAA
                                 </fontDescription>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="yes"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jak-GX-Bg9">
-                                <rect key="frame" x="16" y="221" width="361" height="150"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJx-LM-kRf">
+                                <rect key="frame" x="16" y="225" width="361" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="Jak-GX-Bg9">
+                                <rect key="frame" x="16" y="225" width="361" height="200"/>
                                 <color key="backgroundColor" red="0.96194994449615479" green="0.96192115545272827" blue="0.96193742752075195" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Fg1-BP-LWk"/>
+                                    <constraint firstAttribute="height" constant="200" id="Fg1-BP-LWk"/>
                                 </constraints>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="ArchitunMedium" family="Architun" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sC4-dc-kOq">
@@ -306,7 +307,7 @@ UHJvc3RveSBBV1gAA
                                 </connections>
                             </textField>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HrJ-mq-rYh">
-                                <rect key="frame" x="16" y="396" width="361" height="367"/>
+                                <rect key="frame" x="16" y="450" width="361" height="313"/>
                                 <color key="backgroundColor" name="RayGreen"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bUb-ed-pwj">
                                     <size key="itemSize" width="174" height="135"/>
@@ -342,14 +343,18 @@ UHJvc3RveSBBV1gAA
                             <constraint firstItem="wkl-md-yl6" firstAttribute="bottom" secondItem="kWs-1e-YM5" secondAttribute="bottom" constant="5" id="LRI-Mn-BMg"/>
                             <constraint firstItem="sPZ-R3-EqA" firstAttribute="trailing" secondItem="Tmb-Qn-ndC" secondAttribute="trailingMargin" id="Mti-uu-rxt"/>
                             <constraint firstItem="HrJ-mq-rYh" firstAttribute="trailing" secondItem="Tmb-Qn-ndC" secondAttribute="trailingMargin" id="RXs-0v-uIz"/>
+                            <constraint firstItem="HrJ-mq-rYh" firstAttribute="top" secondItem="tJx-LM-kRf" secondAttribute="bottom" constant="25" id="TgC-9g-auC"/>
                             <constraint firstItem="sC4-dc-kOq" firstAttribute="trailing" secondItem="Tmb-Qn-ndC" secondAttribute="trailingMargin" id="bT9-QG-P63"/>
                             <constraint firstItem="kWs-1e-YM5" firstAttribute="top" secondItem="HrJ-mq-rYh" secondAttribute="bottom" constant="5" id="bsV-Zk-sTd"/>
                             <constraint firstItem="Jak-GX-Bg9" firstAttribute="leading" secondItem="Tmb-Qn-ndC" secondAttribute="leadingMargin" id="c4J-yj-9Gj"/>
                             <constraint firstItem="kWs-1e-YM5" firstAttribute="centerX" secondItem="Tmb-Qn-ndC" secondAttribute="centerX" id="hmc-n6-knM"/>
                             <constraint firstItem="Jak-GX-Bg9" firstAttribute="trailing" secondItem="Tmb-Qn-ndC" secondAttribute="trailingMargin" id="j1O-Ol-KpN"/>
                             <constraint firstItem="sC4-dc-kOq" firstAttribute="top" secondItem="sPZ-R3-EqA" secondAttribute="bottom" constant="18" id="kLP-QE-xmm"/>
-                            <constraint firstItem="Jak-GX-Bg9" firstAttribute="top" secondItem="sC4-dc-kOq" secondAttribute="bottom" constant="14" id="oHw-SA-RFd"/>
+                            <constraint firstItem="Jak-GX-Bg9" firstAttribute="top" secondItem="sC4-dc-kOq" secondAttribute="bottom" constant="18" id="oHw-SA-RFd"/>
+                            <constraint firstItem="wkl-md-yl6" firstAttribute="trailing" secondItem="tJx-LM-kRf" secondAttribute="trailing" constant="16" id="sN9-ub-hWC"/>
+                            <constraint firstItem="tJx-LM-kRf" firstAttribute="top" secondItem="sC4-dc-kOq" secondAttribute="bottom" constant="18" id="v59-Or-AKt"/>
                             <constraint firstItem="sPZ-R3-EqA" firstAttribute="top" secondItem="wkl-md-yl6" secondAttribute="top" constant="18" id="x7g-23-p1V"/>
+                            <constraint firstItem="tJx-LM-kRf" firstAttribute="leading" secondItem="wkl-md-yl6" secondAttribute="leading" constant="16" id="xed-Y6-FmF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dvr-gU-UwP">
@@ -366,6 +371,7 @@ UHJvc3RveSBBV1gAA
                         <outlet property="collectionView" destination="HrJ-mq-rYh" id="ppf-L4-GF7"/>
                         <outlet property="descriptionTextField" destination="Jak-GX-Bg9" id="uL2-da-TUe"/>
                         <outlet property="nameTextField" destination="sPZ-R3-EqA" id="gb1-Nz-QyJ"/>
+                        <outlet property="viewShadowDescriptionTexs" destination="tJx-LM-kRf" id="1cq-nl-7eX"/>
                         <segue destination="WZz-L1-nSV" kind="popoverPresentation" identifier="Categories" popoverAnchorView="sC4-dc-kOq" id="qpu-aH-qcE">
                             <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                         </segue>
@@ -374,18 +380,18 @@ UHJvc3RveSBBV1gAA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZi-kd-Y4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="GQF-Dl-wKJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1923" y="780"/>
+            <point key="canvasLocation" x="1922.9007633587785" y="779.57746478873241"/>
         </scene>
         <!--Select Category-->
         <scene sceneID="o7f-FX-qyn">
             <objects>
                 <tableViewController title="Select Category" id="EBb-3Y-HwQ" customClass="CategoriesTableViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Uus-AQ-4wd">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Uus-AQ-4wd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="RayGreen"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="FS5-o3-vFI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="FS5-o3-vFI">
                                 <rect key="frame" x="0.0" y="50" width="393" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FS5-o3-vFI" id="ahK-F0-1jA">
@@ -602,6 +608,9 @@ UHJvc3RveSBBV1gAA
         </namedColor>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
